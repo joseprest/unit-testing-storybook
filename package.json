@@ -1,0 +1,50 @@
+{
+  "scripts": {
+    "build-storybook": "build-storybook",
+    "build": "snowpack build",
+    "chromatic": "npx chromatic --project-token=b5fc8e92e27c",
+    "start": "snowpack dev",
+    "storybook": "start-storybook -p 6006",
+    "test:watch": "jest --watch",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@juggle/resize-observer": "^3.3.1",
+    "@tinymce/tinymce-vue": "^4",
+    "line-height": "^0.3.1",
+    "sass": "^1.38.1",
+    "vue": "^3.0.11"
+  },
+  "devDependencies": {
+    "@babel/core": "7",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@snowpack/plugin-dotenv": "^2.1.0",
+    "@snowpack/plugin-vue": "^2.4.0",
+    "@storybook/addon-actions": "^6.3.7",
+    "@storybook/addon-essentials": "^6.3.7",
+    "@storybook/addon-links": "^6.3.7",
+    "@storybook/vue3": "^6.3.7",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/vue": "^6.4.2",
+    "@vue/cli-plugin-unit-jest": "^5.0.0-beta.3",
+    "@vue/cli-service": "^5.0.0-beta.3",
+    "@vue/compiler-sfc": "^3.2.6",
+    "@vue/test-utils": "^2.0.0-rc.13",
+    "babel-jest": "26",
+    "babel-loader": "^8.2.2",
+    "chromatic": "^5.9.2",
+    "jest": "^26.3.3",
+    "rollup": "^2.56.3",
+    "snowpack": "^3.3.7",
+    "vue-jest": "^5.0.0-alpha.10",
+    "vue-loader": "^16.5.0"
+  },
+  "jest": {
+    "preset": "@vue/cli-plugin-unit-jest",
+    "transform": {
+      "^.+\\.vue$": "vue-jest",
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  }
+}
